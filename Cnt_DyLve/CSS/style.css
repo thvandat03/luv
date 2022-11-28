@@ -174,22 +174,3 @@ date{
     min-width: 100vw;
     min-height: 20vh;
 } 
-/*modi*/
-@media screen and (min-width : 768px) {
-    *{
-        font-size: 50px;
-    }
-     
-    date{
-        font-size: 6em;
-    }
-    day{
-        font-size: 5em;
-        font-weight: bold;
-        text-shadow: 3px 3px #c642fa;
-    }
-    time{
-        font-size: 3.5em;
-    }
-    /*mod*/
-}
