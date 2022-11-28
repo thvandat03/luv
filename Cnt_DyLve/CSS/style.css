@@ -20,9 +20,16 @@ ul{
     display: flex;
     justify-content: space-between;
     color: #fff;
+    margin-top: 2.5vh;
 }
-li{
-    margin: 5px 10px;
+li:first-child{
+    margin-left: 5px;
+}
+li:last-child{
+    margin-right: 5px;
+}
+li i{
+    font-size: 2em;
 }
 .fa-heart{
     color: rgb(224, 11, 96);
@@ -31,7 +38,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
+    margin-top: 2.5vh;
 }
 .clock-box{
     display: inherit;
@@ -165,6 +172,15 @@ date{
 #time{
     font-size: 1.5em;
 }
+
+/* text-content */
+.text-content{
+    width: 100vw;
+    height: 15vh;
+    margin-top: 2.5vh;
+    border-top: #f85470 2px solid;
+    border-bottom: #f85470 2px solid;
+}
 .prs-box{
     border: 2px solid #fff;
     border-top-left-radius: 1em;
@@ -173,4 +189,4 @@ date{
     bottom: 0;
     min-width: 100vw;
     min-height: 20vh;
-} 
+}
