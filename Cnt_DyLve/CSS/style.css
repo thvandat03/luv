@@ -1,7 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 .bg{
-    background: url("../Pictures/Colorful-Gradient.png");
-     
     background: -webkit-linear-gradient(to bottom, #ffafbd, #ffc3a0);
     background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
     min-height: 100vh;
