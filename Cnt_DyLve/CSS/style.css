@@ -1,18 +1,21 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
-
-/* @media screen and ((max-width : 480px) and (min-width : 320px)){ */
+@media screen and (min-width : 768px) {
     *{
-        font-size: 36px;
+        font-size: 50px;
         margin: 0;
         padding: 0;
     }
     .bg{
         background: url("../Pictures/Colorful-Gradient.png");
-/*         
+         
         background: -webkit-linear-gradient(to bottom, #ffafbd, #ffc3a0);
-        background: linear-gradient(to bottom, #ffafbd, #ffc3a0); */
+        background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
         min-height: 100vh;
         min-width: 100vw;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
     ul{
         display: flex;
@@ -28,126 +31,134 @@
     .main-box{
         display: flex;
         justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+    }
+    .clock-box{
+        display: inherit;
     }
     #clock{
-        display: flex;
-        color: #fff;
-        text-align: center;
-        padding: 1em 3em;
+        width: 90vw;
+        display: inherit;
+        color: #f85470;
+        font-family: Tahoma;
     }
     #date{
-        width: 220px;
-        height: 300px;
-        border-radius: 20px;
-        margin-right: 5px;
+        width: 60vw;
+        height: 50vh;
+        border-radius: .75em;
+        margin-right: .4em;
     }
     .numDay{
-        width: 215px;
-        height: 180px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid;
-        border-radius: 20px;
+        border: 3px solid  #fff;
+        border-radius: .5em;
         margin-bottom: 10px;
         font-size: 50px;
+        height: 70%; 
+        background: rgb(255, 255, 255, .3);
     }
     .txtDay{
-        width: 215px;
-        height: 100px;
+        height: calc(100% - 70% - 10px );
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid;
-        border-radius: 20px;
-        margin-right: 3px;
-    }
-
+        border: 3px solid  #fff;
+        border-radius: .75em;
+        background: rgb(255, 255, 255, .3);
+        font-size: 20px;
+    } 
     #time{
-        width: 150px;
-        height: 300px;
+        height: 50vh;
         display: flex;
         flex-direction: column;
-        margin-left: 3px;
+        width: calc(90vw - 60vw);
     }
-    .Hours{
-        
+    #Hours{ 
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-direction: column;
+        margin-bottom: 10px;
+        height: 60%; 
     }
     .numHours{
-        width: 160px;
-        height: 90px;
+        height: 70%; 
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid;
-        border-radius: 15px;
-        margin-bottom: 3px;
+        border: 3px solid  #fff;
+        border-radius: .3em;
+        margin-bottom: 10px;
+        font-size: 3em;
+        background: rgb(255, 255, 255, .3);
+        font-weight: bolder;
     }
     .txtHours{
-        width: 160px;
-        height: 50px;
+        height: calc(100% - 70% - 10px);
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid;
-        border-radius: 10px;
-        margin-bottom: 3px;
+        border: 3px solid  #fff;
+        border-radius: .75em;
+        background: rgb(255, 255, 255, .3);
+        font-weight: bolder;
     }
     .minSec{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+         
+        border-radius: .75em;
+        height: calc(100% - 60% - 10px ); 
         
+    }
+    .Min, .Sec{
+        width: 47%;
+        height: 100%;
+    }
+    .numMin, .numSec{
+        height: 40%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        border-radius: .75em;
+        margin-bottom: 10px;
+        position: relative;
+        font-weight: bolder;
     }
     .numMin{
-        width: 80px;
-        height: 90px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid;
-        border-radius: 15px;
-        margin-bottom: 3px;
-    }
-    .txtMin{
-        width: 85px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid;
-        border-radius: 10px;
+        border: 3px solid #f85470;
     }
     .numSec{
-        width: 80px;
-        height: 90px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid;
-        border-radius: 15px;
-        margin-bottom: 3px;
+        border: 3px solid #c642fa;
     }
-    .txtSec{
-        width: 80px;
-        height: 50px;
+    .txtMin, .txtSec{
+        height: calc(100% - 40% - 10px);
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid;
+        border: 3px solid  #fff;
         border-radius: 10px;
-    }
+        background: rgb(255, 255, 255, .3);
+        font-weight: bolder;
 
-    /* date{
-        font-size: 2em;
+    }
+    date{
+        font-size: 7em;
+        font-weight: bolder;
+        border: .00160403em #fff dashed;
+        box-shadow: inset -2px -2px 3px rgb(238, 168, 168) , inset 2px -2px 2px #f6a8a8;
+        text-shadow: 3px 3px #d19696;
+    }
+    day{
+        font-size: 5em;
+        font-weight: bold;
+        text-shadow: 3px 3px #c642fa;
     }
     time{
-        font-size: 1.5em;
-    } */
+        font-size: 3.5em;
+    }
     .prs-box{
         border: 2px solid #fff;
         border-top-left-radius: 1em;
@@ -155,6 +166,178 @@
         position: fixed;
         bottom: 0;
         min-width: 100vw;
-        min-height: 500px;
+        min-height: 20vh;
+    } 
+    /*mod*/
+}
+@media screen and ((max-width : 768px) and (min-width : 320px)){
+    *{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
     }
-    
+    .bg{
+        background: url("../Pictures/Colorful-Gradient.png");
+         
+        background: -webkit-linear-gradient(to bottom, #ffafbd, #ffc3a0);
+        background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
+        min-height: 100vh;
+        min-width: 100vw;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+    li{
+        margin: 5px 10px;
+    }
+    .fa-heart{
+        color: rgb(224, 11, 96);
+    }
+    .main-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+    }
+    .clock-box{
+        display: inherit;
+    }
+    #clock{
+        width: 90vw;
+        display: inherit;
+        color: #f85470;
+        font-family: Tahoma;
+    }
+    #date{
+        width: 60vw;
+        height: 50vh;
+        border-radius: .75em;
+        margin-right: .4em;
+    }
+    .numDay{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid  #fff;
+        border-radius: .5em;
+        margin-bottom: 10px;
+        font-size: 50px;
+        height: 70%; 
+        background: rgb(255, 255, 255, .3);
+    }
+    .txtDay{
+        height: calc(100% - 70% - 10px );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid  #fff;
+        border-radius: .75em;
+        background: rgb(255, 255, 255, .3);
+        font-size: 20px;
+    } 
+    #time{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        width: calc(90vw - 60vw);
+    }
+    #Hours{ 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+        height: 60%; 
+    }
+    .numHours{
+        height: 70%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid  #fff;
+        border-radius: .3em;
+        margin-bottom: 10px;
+        font-size: 3em;
+        background: rgb(255, 255, 255, .3);
+        font-weight: bolder;
+    }
+    .txtHours{
+        height: calc(100% - 70% - 10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid  #fff;
+        border-radius: .75em;
+        background: rgb(255, 255, 255, .3);
+        font-weight: bolder;
+    }
+    .minSec{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+         
+        border-radius: .75em;
+        height: calc(100% - 60% - 10px ); 
+        
+    }
+    .Min, .Sec{
+        width: 47%;
+        height: 100%;
+    }
+    .numMin, .numSec{
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        border-radius: .75em;
+        margin-bottom: 10px;
+        position: relative;
+        font-weight: bolder;
+    }
+    .numMin{
+        border: 3px solid #f85470;
+    }
+    .numSec{
+        border: 3px solid #c642fa;
+    }
+    .txtMin, .txtSec{
+        height: calc(100% - 40% - 10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid  #fff;
+        border-radius: 10px;
+        background: rgb(255, 255, 255, .3);
+        font-weight: bolder;
+
+    }
+    date{
+        font-size: 2.5em;
+        font-weight: bolder;
+        border: .00160403em #fff dashed;
+        box-shadow: inset -2px -2px 3px rgb(238, 168, 168) , inset 2px -2px 2px #f6a8a8;
+        text-shadow: 3px 3px #d19696;
+    }
+    day{
+        font-size: 4em;
+        font-weight: bold;
+        text-shadow: 3px 3px #c642fa;
+    }
+    time{
+        font-size: 1.5em;
+    }
+    .prs-box{
+        border: 2px solid #fff;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        position: fixed;
+        bottom: 0;
+        min-width: 100vw;
+        min-height: 20vh;
+    } 
+    /*modi*/
+}
