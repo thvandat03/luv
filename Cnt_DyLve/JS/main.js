@@ -11,7 +11,7 @@ function clock(){
     document.querySelector('.numHours').textContent = Hours;
     document.querySelector('.numMin').textContent = Minutes;
     document.querySelector('.numSec').textContent = Seconds;
-    document.querySelector('date').textContent = today.getDay();
+    document.querySelector('date').textContent = "0";
     console.log(today)
 }
 setInterval(clock, 1000)
