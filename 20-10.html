@@ -53,5 +53,13 @@
   <source src="./20-10/sound/music.mp3" type="audio/mpeg"> 
 </audio> 
 <script src="./20-10/js/main.js" type="text/html"></script>
+<script type="text/html">
+  function play(){
+    var audio = document.getElementById("msc");
+    audio.loop = true;
+    audio.autoplay = true;
+}
+setInterval(play, 15000);
+</script>
 </body>
 </html>
