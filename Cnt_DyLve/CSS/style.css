@@ -148,8 +148,6 @@
     date{
         font-size: 7em;
         font-weight: bolder;
-        border: .00160403em #fff dashed;
-        box-shadow: inset -2px -2px 3px rgb(238, 168, 168) , inset 2px -2px 2px #f6a8a8;
         text-shadow: 3px 3px #d19696;
     }
     day{
@@ -182,6 +180,7 @@
         display: flex;
         justify-content: space-between;
         color: #fff;
+        opacity: 0;
     }
     li{
         margin: 5px 10px;
@@ -306,7 +305,7 @@
 
     }
     date{
-        font-size: 2.5em;
+        font-size: 2.3em;
         font-weight: bolder;
         border: .00160403em #fff dashed;
         box-shadow: inset -2px -2px 3px rgb(238, 168, 168) , inset 2px -2px 2px #f6a8a8;
