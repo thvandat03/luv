@@ -13,5 +13,10 @@
 }
 .bg{
     background: url('../Pictures/heart.gif');
-    background-size: contain;
+    background-size: initial;
+}
+.select{
+    width: 200px;
+    height: 200px;
+    border: 1px solid ;
 }
